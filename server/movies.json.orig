@@ -1,0 +1,171 @@
+{
+  "joe": {
+    "tt0399295": {
+      "imdbID": "tt0399295",
+      "Title": "Lord of War",
+      "Released": "2005-09-15",
+      "Runtime": 122,
+      "Genres": [
+        "Crime",
+        "Drama"
+      ],
+      "Directors": [
+        "Andrew Niccol"
+      ],
+      "Writers": [
+        "Andrew Niccol"
+      ],
+      "Actors": [
+        "Nicolas Cage",
+        "Ethan Hawke",
+        "Jared Leto"
+      ],
+      "Plot": "An arms dealer confronts the morality of his work as he is being chased by an INTERPOL Agent.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNThlY2NkYmMtNTFhNi00MzBiLWJmNzEtZjk5MzYwYWU2MjllXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 62,
+      "imdbRating": 7.6
+    },
+    "tt0167260": {
+      "imdbID": "tt0167260",
+      "Title": "The Lord of the Rings: The Return of the King",
+      "Released": "2003-12-16",
+      "Runtime": 201,
+      "Genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "Directors": [
+        "Peter Jackson"
+      ],
+      "Writers": [
+        "J.R.R. Tolkien",
+        "Fran Walsh",
+        "Philippa Boyens"
+      ],
+      "Actors": [
+        "Elijah Wood",
+        "Viggo Mortensen",
+        "Ian McKellen"
+      ],
+      "Plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 94,
+      "imdbRating": 9
+    },
+    "tt0057261": {
+      "imdbID": "tt0057261",
+      "Title": "Lord of the Flies",
+      "Released": "1963-08-12",
+      "Runtime": 92,
+      "Genres": [
+        "Adventure",
+        "Drama",
+        "Thriller"
+      ],
+      "Directors": [
+        "Peter Brook"
+      ],
+      "Writers": [
+        "William Golding",
+        "Peter Brook"
+      ],
+      "Actors": [
+        "James Aubrey",
+        "Tom Chapin",
+        "Hugh Edwards"
+      ],
+      "Plot": "Schoolboys marooned on a Pacific island create their own savage civilization.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BY2RiOTM0ZDgtNDRlMi00MDMzLWI1NDYtY2NjZDM4YTkwNWVlXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 67,
+      "imdbRating": 6.9
+    }
+  },
+  "jane": {
+    "tt1972591": {
+      "imdbID": "tt1972591",
+      "Title": "King Arthur: Legend of the Sword",
+      "Released": "2017-05-11",
+      "Runtime": 126,
+      "Genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "Directors": [
+        "Guy Ritchie"
+      ],
+      "Writers": [
+        "Joby Harold",
+        "Guy Ritchie",
+        "Lionel Wigram"
+      ],
+      "Actors": [
+        "Charlie Hunnam",
+        "Astrid Bergès-Frisbey",
+        "Jude Law"
+      ],
+      "Plot": "Robbed of his birthright, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword from the stone, he is forced to acknowledge his true legacy - whether he likes it or not.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjM3ODY3Njc5Ml5BMl5BanBnXkFtZTgwMjQ5NjM5MTI@._V1_SX300.jpg",
+      "Metascore": 41,
+      "imdbRating": 6.7
+    },
+    "tt0360717": {
+      "imdbID": "tt0360717",
+      "Title": "King Kong",
+      "Released": "2005-12-13",
+      "Runtime": 187,
+      "Genres": [
+        "Action",
+        "Adventure",
+        "Romance"
+      ],
+      "Directors": [
+        "Peter Jackson"
+      ],
+      "Writers": [
+        "Fran Walsh",
+        "Philippa Boyens",
+        "Peter Jackson"
+      ],
+      "Actors": [
+        "Naomi Watts",
+        "Jack Black",
+        "Adrien Brody"
+      ],
+      "Plot": "A greedy film producer assembles a team of moviemakers and sets out for the infamous Skull Island, where they find more than just cannibalistic natives.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMWY0NWE0ZjUtNjRlOS00ZDViLTgxNTQtMGMwN2FhNDY1YTg2XkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 81,
+      "imdbRating": 7.2
+    },
+    "tt0110357": {
+      "imdbID": "tt0110357",
+      "Title": "The Lion King",
+      "Released": "1994-06-23",
+      "Runtime": 88,
+      "Genres": [
+        "Animation",
+        "Adventure",
+        "Drama"
+      ],
+      "Directors": [
+        "Roger Allers",
+        "Rob Minkoff"
+      ],
+      "Writers": [
+        "Irene Mecchi",
+        "Jonathan Roberts",
+        "Linda Woolverton"
+      ],
+      "Actors": [
+        "Matthew Broderick",
+        "Jeremy Irons",
+        "James Earl Jones"
+      ],
+      "Plot": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 88,
+      "imdbRating": 8.5
+    }
+  }
+}

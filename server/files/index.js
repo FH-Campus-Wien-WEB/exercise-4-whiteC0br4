@@ -87,8 +87,11 @@ function addMovie(imdbID) {
   fetch(`/movies/${imdbID}`, { method: 'PUT' })
     .then(response => {
       if (response.status === 201) {
-        // Task 2.2: Make sure to remove the added movie from the search results to avoid
-        // giving the user the option to add it again.
+        // Task 2.2: Element aus den Suchergebnissen im Dialog entfernen
+        const searchItem = document.getElementById(`search-item-${imdbID}`);
+        if (searchItem) {
+          searchItem.remove();
+        }
     
         loadMovies();
         updateGenres();
@@ -133,14 +136,37 @@ function searchMovies(query) {
       const resultsDiv = document.getElementById("searchResults");
       resultsDiv.innerHTML = '';
 
-      // Task 2.2: Render the results returned from the server. Make sure to
-      // include an "Add" button for each result that calls `addMovie(imdbID)` when clicked.
-      // There is a second part to this task, in `addMovie`
+      // Task 2.2: Überprüfen, ob Ergebnisse gefunden wurden
+      if (results.length === 0) {
+        new ElementBuilder("p").text(messages.noResultsFound).appendTo(resultsDiv);
+        return;
+      }
 
+      // Task 2.2: Ergebnisse rendern und "Add"-Button hinzufügen
+      results.forEach(movie => {
+        // Container für die Zeile mit einer ID versehen, um sie später löschen zu können
+        const movieRow = new ElementBuilder("div")
+          .with("id", `search-item-${movie.imdbID}`);
+
+        const yearText = movie.Year ? ` (${movie.Year})` : '';
+        
+        // Titel-Text hinzufügen
+        new ElementBuilder("span")
+          .text(`${movie.Title}${yearText} `)
+          .appendTo(movieRow);
+
+        // "Add"-Button erzeugen und verknüpfen
+        new ButtonBuilder("Add")
+          .onclick(() => addMovie(movie.imdbID))
+          .appendTo(movieRow);
+
+        movieRow.appendTo(resultsDiv);
+      });
     })
     .catch(error => {
       console.error('Search failed:', error);
       const resultsDiv = document.getElementById("searchResults");
+      resultsDiv.innerHTML = ''; // Vorherigen Inhalt leeren
       new ElementBuilder("p").text(messages.searchFailed).appendTo(resultsDiv);
     });
 }
@@ -168,6 +194,15 @@ window.onload = function () {
       // Task 1.2: Render a user greeting to `#userGreeting` 
       // using `firstName`, `lastName`, and the server-provided
       // login timestamp.
+      const loginDate = new Date(currentSession.loginTime);
+      
+      const optionsDate = { day: 'numeric', month: 'long', year: 'numeric' };
+      const optionsTime = { hour: '2-digit', minute: '2-digit' };
+      
+      const formattedDate = loginDate.toLocaleDateString('de-DE', optionsDate);
+      const formattedTime = loginDate.toLocaleTimeString('de-DE', optionsTime);
+
+      greetingElement.textContent = `Hi ${currentSession.firstName} ${currentSession.lastName}, du hast dich am ${formattedDate} um ${formattedTime} angemeldet.`;
     } else {
       greetingElement.textContent = messages.loggedOutGreeting;
     }
@@ -213,9 +248,34 @@ window.onload = function () {
     const formData = new FormData(e.target);
 
     // Task 1.1: Implement the login submit flow to call `POST /login` 
-    // with username and password, handle errors, save the response 
-    // into `currentSession`, then call `updateUI()` and `loadMovies()`.
+    const data = Object.fromEntries(formData.entries());
 
+    fetch("/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else if (response.status === 401) {
+        throw new Error(messages.loginFailed);
+      } else {
+        throw new Error(`HTTP ${response.status}`);
+      }
+    })
+    .then(sessionData => {
+      currentSession = sessionData;
+      document.getElementById('loginDialog').close();
+      updateUI();
+      loadMovies();
+    })
+    .catch(error => {
+      console.error('Login dynamic error:', error);
+      alert(messages.loginFailed);
+    });
   });
 
   document.getElementById('cancelLogin').addEventListener('click', () => {
@@ -240,4 +300,3 @@ window.onload = function () {
     document.getElementById('searchDialog').close();
   });
 };
-
