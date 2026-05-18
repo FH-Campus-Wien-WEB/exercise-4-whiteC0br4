@@ -144,22 +144,21 @@ function searchMovies(query) {
 
       // Task 2.2: Ergebnisse rendern und "Add"-Button hinzufügen
       results.forEach(movie => {
-        // Container für die Zeile mit einer ID versehen, um sie später löschen zu können
+        // Container für die Zeile erstellen
         const movieRow = new ElementBuilder("div")
           .with("id", `search-item-${movie.imdbID}`);
 
         const yearText = movie.Year ? ` (${movie.Year})` : '';
         
-        // Titel-Text hinzufügen
-        new ElementBuilder("span")
-          .text(`${movie.Title}${yearText} `)
-          .appendTo(movieRow);
+        // KORREKTUR: Wir erstellen die Elemente und hängen sie MIT .append() IN den movieRow-Container ein
+        const titleSpan = new ElementBuilder("span").text(`${movie.Title}${yearText} `);
+        const addButton = new ButtonBuilder("Add").onclick(() => addMovie(movie.imdbID));
 
-        // "Add"-Button erzeugen und verknüpfen
-        new ButtonBuilder("Add")
-          .onclick(() => addMovie(movie.imdbID))
-          .appendTo(movieRow);
+        // Beide Kinder in die Zeile stecken
+        movieRow.append(titleSpan);
+        movieRow.append(addButton);
 
+        // Die fertige Zeile in das Suchfenster einbetten
         movieRow.appendTo(resultsDiv);
       });
     })
@@ -192,8 +191,6 @@ window.onload = function () {
     const greetingElement = document.getElementById('userGreeting');
     if (currentSession) {
       // Task 1.2: Render a user greeting to `#userGreeting` 
-      // using `firstName`, `lastName`, and the server-provided
-      // login timestamp.
       const loginDate = new Date(currentSession.loginTime);
       
       const optionsDate = { day: 'numeric', month: 'long', year: 'numeric' };
@@ -247,7 +244,7 @@ window.onload = function () {
     e.preventDefault();
     const formData = new FormData(e.target);
 
-    // Task 1.1: Implement the login submit flow to call `POST /login` 
+    // Task 1.1: Implement the login submit flow to call `POST /login`
     const data = Object.fromEntries(formData.entries());
 
     fetch("/login", {

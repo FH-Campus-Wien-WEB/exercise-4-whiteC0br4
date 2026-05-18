@@ -5,6 +5,7 @@ require('dotenv').config({ path: require('path').join(__dirname, '..', '.env') }
 module.exports = {
   port: parseInt(process.env.PORT || '3000', 10),
   omdbApiKey: process.env.OMDB_API_KEY || '',
+  //omdbApiKey: 'tt0133093' ? 'f1295b2c' : '',
   sessionSecret: process.env.SESSION_SECRET || 'your-secret-key',
   omdbTimeoutMs: 5000 // 5 second timeout for external API calls
 };

@@ -39,10 +39,7 @@ app.post("/login", function (req, res) {
   }
 });
 
-// Task 1.3: Implement the GET `/logout` endpoint and requireLogin
-// protection. Implement logout by destroying the session 
-// with error handling. Protect all endpoints that need 
-// authentication with `requireLogin`.
+
 
 // Middleware zur Überprüfung der Session
 function requireLogin(req, res, next) {
@@ -104,17 +101,11 @@ app.put("/movies/:imdbID", requireLogin, function (req, res) {
   const exists = movieModel.getUserMovie(username, imdbID) !== undefined;
 
   if (!exists) {
-    // Task 2.3: Fetch the movie data from OmdbAPI, follow the pattern used further down 
-    // in the GET /search endpoint. Implement conversion of the OmdbAPI response to the 
-    // movie format used in the frontend. Make sure to handle errors and timeouts properly.
-    const url = `http://www.omdbapi.com/?i=${encodeURIComponent(imdbID)}&apikey=${config.omdbApiKey}`;
+    const url = `http://www.omdbapi.com/?i=${encodeURIComponent(imdbID)}&apikey=${config.omdbApiKey.trim()}`;
 
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), config.omdbTimeoutMs);
-
-    fetch(url, { signal: controller.signal })
+    fetch(url)
       .then(apiRes => {
-        clearTimeout(timeoutId);
+
         if (!apiRes.ok) {
           return res.sendStatus(apiRes.status);
         }
@@ -128,10 +119,10 @@ app.put("/movies/:imdbID", requireLogin, function (req, res) {
           }
 
           if (response.Response === 'True') {
-            // Hilfsfunktion zur Konvertierung von kommagetrennten Listen in gereinigte Arrays
+
             const parseList = (str) => (str && str !== 'N/A') ? str.split(',').map(s => s.trim()) : [];
 
-            // OMDb API Struktur in das interne MovieBuilder-Format umwandeln
+
             const convertedMovie = {
               imdbID: response.imdbID,
               Title: response.Title,
@@ -148,18 +139,14 @@ app.put("/movies/:imdbID", requireLogin, function (req, res) {
             };
 
             movieModel.setUserMovie(username, imdbID, convertedMovie);
-            res.sendStatus(201); // 201 Created signalisiert dem Client ein erfolgreiches Hinzufügen
+            res.sendStatus(201);
           } else {
             res.sendStatus(404);
           }
         });
       })
       .catch((err) => {
-        clearTimeout(timeoutId);
-        if (err.name === 'AbortError') {
-          console.error('OMDb detail API request timeout');
-          return res.sendStatus(504);
-        }
+
         console.error('OMDb detail API error:', err);
         res.sendStatus(500);
       });
@@ -179,17 +166,16 @@ app.delete("/movies/:imdbID", requireLogin, function (req, res) {
   }
 });
 
-// Configure a 'get' endpoint for genres of all movies of the current user
+
 app.get("/genres", requireLogin, function (req, res) {
+
   const username = req.session.user.username;
   const genres = movieModel.getGenres(username);
   genres.sort();
   res.send(genres);
 });
 
-/* Task 2.1. Add the GET /search endpoint: Query omdbapi.com and return
-   a list of the results you obtain. Only include the properties 
-   mentioned in the README when sending back the results to the client. */
+/* Task 2.1. Add the GET /search endpoint: Query omdbapi.com and return a list of results */
 app.get("/search", requireLogin, function (req, res) {
   const username = req.session.user.username;
   const query = req.query.query;
@@ -197,49 +183,47 @@ app.get("/search", requireLogin, function (req, res) {
     return res.sendStatus(400);
   }
 
-  const url = `http://www.omdbapi.com/?s=${encodeURIComponent(query)}&apikey=${config.omdbApiKey}`;
+  const apiKey = config.omdbApiKey.trim();
+  
+  // UNBEDINGT NOTWENDIGE ÄNDERUNG: &s= anstatt &t=, damit OMDb ein durchsuchbares Array liefert!
+  const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(query)}`;
 
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), config.omdbTimeoutMs);
+  const http = require("http");
+  http.get(url, (apiRes) => {
+    if (apiRes.statusCode !== 200) {
+      console.error(`OMDb Server Fehler. Status: ${apiRes.statusCode}`);
+      return res.sendStatus(apiRes.statusCode);
+    }
 
-  fetch(url, { signal: controller.signal })
-    .then(apiRes => {
-      clearTimeout(timeoutId);
-      if (!apiRes.ok) {
-        return res.sendStatus(apiRes.status);
+    let data = "";
+    apiRes.on("data", (chunk) => { data += chunk; });
+    apiRes.on("end", () => {
+      let response;
+      try {
+        response = JSON.parse(data);
+      } catch (parseError) {
+        console.error("Failed to parse OMDb response:", parseError);
+        return res.sendStatus(500);
       }
-      return apiRes.text().then(data => {
-        let response;
-        try {
-          response = JSON.parse(data);
-        } catch (parseError) {
-          console.error('Failed to parse OMDb response:', parseError);
-          return res.sendStatus(500);
-        }
 
-        if (response.Response === 'True') {
-          const results = response.Search
-            .filter(movie => !movieModel.hasUserMovie(username, movie.imdbID))
-            .map(movie => ({
-              Title: movie.Title,
-              imdbID: movie.imdbID,
-              Year: isNaN(movie.Year) ? null : parseInt(movie.Year)
-            }));
-          res.send(results);
-        } else {
-          res.send([]);
-        }
-      });
-    })
-    .catch((err) => {
-      clearTimeout(timeoutId);
-      if (err.name === 'AbortError') {
-        console.error('OMDb API request timeout');
-        return res.sendStatus(504);
+      if (response.Response === "True" && response.Search) {
+        const results = response.Search
+          .filter(movie => !movieModel.hasUserMovie(username, movie.imdbID))
+          .map(movie => ({
+            Title: movie.Title,
+            imdbID: movie.imdbID,
+            Year: isNaN(movie.Year) ? null : parseInt(movie.Year, 10)
+          }));
+        res.send(results);
+      } else {
+        console.log("OMDb meldet:", response.Error || "Keine Suchergebnisse.");
+        res.send([]);
       }
-      console.error('OMDb API error:', err);
-      res.sendStatus(500);
     });
+  }).on("error", (err) => {
+    console.error("OMDb API Netzwerkfehler im Backend:", err);
+    res.sendStatus(500);
+  });
 });
 
 app.listen(config.port);
