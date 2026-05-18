@@ -1,19 +1,39 @@
 {
   "joe": {
+    "tt0399295": {
+      "imdbID": "tt0399295",
+      "Title": "Lord of War",
+      "Released": "2005-09-15",
+      "Runtime": 122,
+      "Genres": [
+        "Crime",
+        "Drama"
+      ],
+      "Directors": [
+        "Andrew Niccol"
+      ],
+      "Writers": [
+        "Andrew Niccol"
+      ],
+      "Actors": [
+        "Nicolas Cage",
+        "Ethan Hawke",
+        "Jared Leto"
+      ],
+      "Plot": "An arms dealer confronts the morality of his work as he is being chased by an INTERPOL Agent.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNThlY2NkYmMtNTFhNi00MzBiLWJmNzEtZjk5MzYwYWU2MjllXkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 62,
+      "imdbRating": 7.6
+    },
     "tt0167260": {
       "imdbID": "tt0167260",
       "Title": "The Lord of the Rings: The Return of the King",
       "Released": "2003-12-16",
       "Runtime": 201,
-      "Plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 94,
-      "imdbRating": 9,
       "Genres": [
         "Adventure",
         "Drama",
-        "Fantasy",
-        "War"
+        "Fantasy"
       ],
       "Directors": [
         "Peter Jackson"
@@ -27,7 +47,11 @@
         "Elijah Wood",
         "Viggo Mortensen",
         "Ian McKellen"
-      ]
+      ],
+      "Plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_SX300.jpg",
+      "Metascore": 94,
+      "imdbRating": 9
     },
     "tt0057261": {
       "imdbID": "tt0057261",
@@ -55,141 +79,6 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BY2RiOTM0ZDgtNDRlMi00MDMzLWI1NDYtY2NjZDM4YTkwNWVlXkEyXkFqcGc@._V1_SX300.jpg",
       "Metascore": 67,
       "imdbRating": 6.9
-    },
-    "tt0330373": {
-      "imdbID": "tt0330373",
-      "Title": "Harry Potter and the Goblet of Fire",
-      "Released": "2005-11-17",
-      "Runtime": 157,
-      "Genres": [
-        "Adventure",
-        "Family",
-        "Fantasy"
-      ],
-      "Directors": [
-        "Mike Newell"
-      ],
-      "Writers": [
-        "Steve Kloves",
-        "J.K. Rowling"
-      ],
-      "Actors": [
-        "Daniel Radcliffe",
-        "Emma Watson",
-        "Rupert Grint"
-      ],
-      "Plot": "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTIzNzUzOTk2NV5BMl5BanBnXkFtZTYwNTI4MDg2._V1_SX300.jpg",
-      "Metascore": 81,
-      "imdbRating": 7.7
-    },
-    "tt4244162": {
-      "imdbID": "tt4244162",
-      "Title": "Beta Test",
-      "Released": "2016-07-21",
-      "Runtime": 88,
-      "Genres": [
-        "Action",
-        "Sci-Fi",
-        "Thriller"
-      ],
-      "Directors": [
-        "Nicholas Gyeney"
-      ],
-      "Writers": [
-        "Nicholas Gyeney",
-        "André Kirkman"
-      ],
-      "Actors": [
-        "Manu Bennett",
-        "Larenz Tate",
-        "Linden Ashby"
-      ],
-      "Plot": "Champion gamer Max Troy discovers events in a new video game are being mirrored in the real world, and must join forces with the game's protagonist, Orson Creed, to unravel the conspiracy before the game's sinister plot overwhelms...",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZjhlM2ZhMzUtMzU4ZC00ZjAyLWIxZmYtOWY4N2RlMWEzYTcwXkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": null,
-      "imdbRating": 4.8
-    },
-    "tt11738830": {
-      "imdbID": "tt11738830",
-      "Title": "The Beta Test",
-      "Released": "2021-10-14",
-      "Runtime": 93,
-      "Genres": [
-        "Comedy",
-        "Drama",
-        "Mystery"
-      ],
-      "Directors": [
-        "Jim Cummings",
-        "PJ McCabe"
-      ],
-      "Writers": [
-        "Jim Cummings",
-        "PJ McCabe"
-      ],
-      "Actors": [
-        "Jim Cummings",
-        "Virginia Newcomb",
-        "PJ McCabe"
-      ],
-      "Plot": "A married Hollywood agent receives a mysterious letter for an anonymous sexual encounter and becomes ensnared in a sinister world of lying, murder and infidelity.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZTBhNjcyMjEtM2NiMi00YzQ3LThlYjEtMjFiNDc3NWJiNGJiXkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 72,
-      "imdbRating": 6.1
-    },
-    "tt35669125": {
-      "imdbID": "tt35669125",
-      "Title": "This Is Not a Test",
-      "Released": "2026-03-10",
-      "Runtime": 103,
-      "Genres": [
-        "Horror",
-        "Thriller"
-      ],
-      "Directors": [
-        "Adam MacDonald"
-      ],
-      "Writers": [
-        "Courtney Summers",
-        "Adam MacDonald"
-      ],
-      "Actors": [
-        "Olivia Holt",
-        "Jeff Roop",
-        "Froy Gutierrez"
-      ],
-      "Plot": "Follows Sloane and four other students who take shelter in their high school during a zombie outbreak.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZDI4MjI1YjktNjIyNi00ZjVlLWJkMDktMmNkMDg3YzM0ZDQzXkEyXkFqcGc@._V1_QL75_UY562_CR1,0,380,562_.jpg",
-      "Metascore": 36,
-      "imdbRating": 4.6
-    },
-    "tt2728220": {
-      "imdbID": "tt2728220",
-      "Title": "Friday Night Horror",
-      "Released": "2012-10-17",
-      "Runtime": 85,
-      "Plot": "",
-      "Poster": "",
-      "Metascore": 0,
-      "imdbRating": 4.5,
-      "Genres": [
-        "Adventure",
-        "Comedy",
-        "Horror"
-      ],
-      "Directors": [
-        "Barbara Gräftner"
-      ],
-      "Writers": [
-        "Barbara Gräftner"
-      ],
-      "Actors": [
-        "Natalya Baranova",
-        "Heinz Arthur Boltuch",
-        "Nina Bruckner",
-        "Christian Dung"
-      ]
     }
   },
   "jane": {
@@ -277,277 +166,6 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_SX300.jpg",
       "Metascore": 88,
       "imdbRating": 8.5
-    },
-    "tt0241527": {
-      "imdbID": "tt0241527",
-      "Title": "Harry Potter and the Sorcerer's Stone",
-      "Released": "2001-11-15",
-      "Runtime": 152,
-      "Genres": [
-        "Adventure",
-        "Family",
-        "Fantasy"
-      ],
-      "Directors": [
-        "Chris Columbus"
-      ],
-      "Writers": [
-        "J.K. Rowling",
-        "Steve Kloves"
-      ],
-      "Actors": [
-        "Daniel Radcliffe",
-        "Rupert Grint",
-        "Emma Watson"
-      ],
-      "Plot": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 65,
-      "imdbRating": 7.7
-    },
-    "tt0295297": {
-      "imdbID": "tt0295297",
-      "Title": "Harry Potter and the Chamber of Secrets",
-      "Released": "2002-11-14",
-      "Runtime": 161,
-      "Genres": [
-        "Adventure",
-        "Family",
-        "Fantasy"
-      ],
-      "Directors": [
-        "Chris Columbus"
-      ],
-      "Writers": [
-        "J.K. Rowling",
-        "Steve Kloves"
-      ],
-      "Actors": [
-        "Daniel Radcliffe",
-        "Rupert Grint",
-        "Emma Watson"
-      ],
-      "Plot": "Harry Potter lives his second year at Hogwarts with Ron and Hermione when a message on the wall announces that the legendary Chamber of Secrets has been opened. The trio soon realize that, to save the school, it will take a lot of...",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 63,
-      "imdbRating": 7.5
-    },
-    "tt0330373": {
-      "imdbID": "tt0330373",
-      "Title": "Harry Potter and the Goblet of Fire",
-      "Released": "2005-11-17",
-      "Runtime": 157,
-      "Genres": [
-        "Adventure",
-        "Family",
-        "Fantasy"
-      ],
-      "Directors": [
-        "Mike Newell"
-      ],
-      "Writers": [
-        "Steve Kloves",
-        "J.K. Rowling"
-      ],
-      "Actors": [
-        "Daniel Radcliffe",
-        "Emma Watson",
-        "Rupert Grint"
-      ],
-      "Plot": "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTIzNzUzOTk2NV5BMl5BanBnXkFtZTYwNTI4MDg2._V1_SX300.jpg",
-      "Metascore": 81,
-      "imdbRating": 7.7
-    },
-    "tt0373889": {
-      "imdbID": "tt0373889",
-      "Title": "Harry Potter and the Order of the Phoenix",
-      "Released": "2007-07-10",
-      "Runtime": 138,
-      "Genres": [
-        "Action",
-        "Adventure",
-        "Family"
-      ],
-      "Directors": [
-        "David Yates"
-      ],
-      "Writers": [
-        "Michael Goldenberg",
-        "J.K. Rowling"
-      ],
-      "Actors": [
-        "Daniel Radcliffe",
-        "Emma Watson",
-        "Rupert Grint"
-      ],
-      "Plot": "With their warning about Lord Voldemort's return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BYWJmM2M1YzItMjY1Ni00YzRmLTg5YWYtNDFmNTJjNzQ0ODkyXkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 71,
-      "imdbRating": 7.5
-    },
-    "tt1201607": {
-      "imdbID": "tt1201607",
-      "Title": "Harry Potter and the Deathly Hallows: Part 2",
-      "Released": "2011-07-14",
-      "Runtime": 130,
-      "Genres": [
-        "Adventure",
-        "Family",
-        "Fantasy"
-      ],
-      "Directors": [
-        "David Yates"
-      ],
-      "Writers": [
-        "Steve Kloves",
-        "J.K. Rowling"
-      ],
-      "Actors": [
-        "Daniel Radcliffe",
-        "Emma Watson",
-        "Rupert Grint"
-      ],
-      "Plot": "Harry, Ron and Hermione set out on a quest to eliminate the remaining horcruxes. On the other hand, the students and teachers must unite to defend Hogwarts against Lord Voldemort and his army.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 85,
-      "imdbRating": 8.1
-    },
-    "tt0304141": {
-      "imdbID": "tt0304141",
-      "Title": "Harry Potter and the Prisoner of Azkaban",
-      "Released": "2004-06-03",
-      "Runtime": 142,
-      "Genres": [
-        "Adventure",
-        "Family",
-        "Fantasy"
-      ],
-      "Directors": [
-        "Alfonso Cuarón"
-      ],
-      "Writers": [
-        "J.K. Rowling",
-        "Steve Kloves"
-      ],
-      "Actors": [
-        "Daniel Radcliffe",
-        "Emma Watson",
-        "Rupert Grint"
-      ],
-      "Plot": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg",
-      "Metascore": 82,
-      "imdbRating": 7.9
-    },
-    "tt0926084": {
-      "imdbID": "tt0926084",
-      "Title": "Harry Potter and the Deathly Hallows: Part 1",
-      "Released": "2010-11-18",
-      "Runtime": 146,
-      "Genres": [
-        "Adventure",
-        "Family",
-        "Fantasy"
-      ],
-      "Directors": [
-        "David Yates"
-      ],
-      "Writers": [
-        "Steve Kloves",
-        "J.K. Rowling"
-      ],
-      "Actors": [
-        "Daniel Radcliffe",
-        "Emma Watson",
-        "Rupert Grint"
-      ],
-      "Plot": "Harry Potter is tasked with the dangerous and seemingly impossible task of locating and destroying Voldemort's remaining Horcruxes. Harry must rely on Ron and Hermione more than ever, but dark forces threaten to tear them apart.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg",
-      "Metascore": 65,
-      "imdbRating": 7.7
-    },
-    "tt0417741": {
-      "imdbID": "tt0417741",
-      "Title": "Harry Potter and the Half-Blood Prince",
-      "Released": "2009-07-14",
-      "Runtime": 153,
-      "Genres": [
-        "Action",
-        "Adventure",
-        "Family"
-      ],
-      "Directors": [
-        "David Yates"
-      ],
-      "Writers": [
-        "Steve Kloves",
-        "J.K. Rowling"
-      ],
-      "Actors": [
-        "Daniel Radcliffe",
-        "Emma Watson",
-        "Rupert Grint"
-      ],
-      "Plot": "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as \"the property of the Half-Blood Prince\" and begins to learn more about Lord Voldemort's dark past.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg",
-      "Metascore": 78,
-      "imdbRating": 7.6
-    },
-    "tt0098635": {
-      "imdbID": "tt0098635",
-      "Title": "When Harry Met Sally...",
-      "Released": "1989-07-20",
-      "Runtime": 95,
-      "Genres": [
-        "Comedy",
-        "Drama",
-        "Romance"
-      ],
-      "Directors": [
-        "Rob Reiner"
-      ],
-      "Writers": [
-        "Nora Ephron"
-      ],
-      "Actors": [
-        "Billy Crystal",
-        "Meg Ryan",
-        "Carrie Fisher"
-      ],
-      "Plot": "Harry and Sally have known each other for years, and are very good friends, but they fear sex would ruin the friendship.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMjE0ODEwNjM2NF5BMl5BanBnXkFtZTcwMjU2Mzg3NA@@._V1_SX300.jpg",
-      "Metascore": 76,
-      "imdbRating": 7.7
-    },
-    "tt0066999": {
-      "imdbID": "tt0066999",
-      "Title": "Dirty Harry",
-      "Released": "1971-12-22",
-      "Runtime": 102,
-      "Genres": [
-        "Action",
-        "Crime",
-        "Thriller"
-      ],
-      "Directors": [
-        "Don Siegel",
-        "Clint Eastwood"
-      ],
-      "Writers": [
-        "Harry Julian Fink",
-        "Rita M. Fink",
-        "Dean Riesner"
-      ],
-      "Actors": [
-        "Clint Eastwood",
-        "Andrew Robinson",
-        "Harry Guardino"
-      ],
-      "Plot": "When a killer calling himself \"Scorpio\" menaces San Francisco, tough-as-nails Police Inspector \"Dirty\" Harry Callahan is assigned to track down the crazed psychopath.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BYzNmOWVjN2ItMTQzOS00MTI4LTgxZDItMmZjNTVlMjY5Mjc1XkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 87,
-      "imdbRating": 7.7
     }
   }
 }
